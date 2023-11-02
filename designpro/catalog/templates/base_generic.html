@@ -1,0 +1,16 @@
+{% load static %}
+
+
+<header>
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</header>
+<body>
+    <ul class="dropdown-menu">
+        <ul class="sidebar-nav">
+            <a class="dropdown-item" href="#">Главная</a>
+            <a class="dropdown-item" href="{% url 'registration' %}">Регистрация</a>
+            <a class="dropdown-item" href="{% url 'login' %}">Авторизация</a>
+        </ul>
+    </ul>
+<h2>Добро пожаловать на сайт! </h2>
+</body>
